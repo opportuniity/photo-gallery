@@ -11,7 +11,7 @@ $errors = isset($_GET['errors']) ? explode(',', $_GET['errors']) : [];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Фото Галерея з Deep Zoom</title>
+    <title>Фото Галерея</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -39,8 +39,6 @@ $errors = isset($_GET['errors']) ? explode(',', $_GET['errors']) : [];
     <?php endforeach; ?>
 </div>
 
-
-<script src="js/gallery.js"></script>
 <script>
     if (window.location.search.includes('errors')) {
         const url = new URL(window.location);
